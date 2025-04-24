@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ferma Veselă | Aplicație educativă 3-6 ani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #E8AE8A;
+      --primary: #BAA4C8;
+      --card-bg: #E1CECE;
+      --text: #2e2e2e;
+      --white: #FEFEFE;
+      --light-bg: #F9FAFA;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+    }
+
+    header, section, footer {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--card-bg));
+      border-radius: 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      background-color: var(--accent);
+      color: var(--white);
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #d8926d;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background-color: var(--card-bg);
+      border-radius: 1rem;
+      padding: 1rem;
+      margin: 0.5rem auto;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    ul li:hover {
+      transform: translateY(-3px);
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .form input {
+      width: 80%;
+      max-width: 400px;
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--card-bg);
+      background-color: var(--white);
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .form input:focus {
+      outline: 2px solid var(--accent);
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐮 Ferma Veselă – Joacă educativă cu animale</h1>
+    <p>O aplicație interactivă pentru copii de 3-6 ani – perfectă pentru învățare prin joc!</p>
+    <button class="btn">🎁 Înscrie-te pentru testare gratuită</button>
+  </header>
+
+  <section>
+    <h2>✨ Ce învață copilul tău în Ferma Veselă?</h2>
+    <ul>
+      <li>✅ Recunoașterea animalelor domestice</li>
+      <li>✅ Asocieri sunete-animale</li>
+      <li>✅ Cunoașterea culorilor și formelor</li>
+      <li>✅ Hrănirea animalelor corecte</li>
+      <li>✅ Coordonare mână-ochi prin jocuri interactive</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🎮 Activități distractive</h2>
+    <ul>
+      <li>🎵 Ascultă sunetul și alege animalul corect</li>
+      <li>🥕 Dă mâncarea potrivită fiecărui animal</li>
+      <li>🟢 Găsește animalul cu forma sau culoarea potrivită</li>
+      <li>🎨 Mini puzzle-uri cu animale și obiecte de la fermă</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💡 De ce e specială Ferma Veselă?</h2>
+    <ul>
+      <li>🛡️ Fără reclame. Fără distrageri.</li>
+      <li>🎨 Design calm și prietenos, adaptat pentru vârsta 3–6 ani</li>
+      <li>👩‍🏫 Conținut educativ validat de părinți și educatori</li>
+      <li>🧠 Activități construite pe principii din psihologia copilului</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📬 Înscrie-te pentru testare gratuită</h2>
+    <p>Primești acces anticipat la aplicație și poți contribui la îmbunătățirea ei!</p>
+    <form class="form">
+      <input type="text" placeholder="Nume complet" required />
+      <input type="email" placeholder="Email" required />
+      <input type="number" placeholder="Vârsta copilului" min="3" max="6" required />
+      <button type="submit" class="btn">✅ Trimite</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>❓ Întrebări frecvente</h2>
+    <ul>
+      <li><strong>Aplicația e gratuită?</strong> Versiunea de test este complet gratuită.</li>
+      <li><strong>Pe ce dispozitive merge?</strong> Inițial pe tabletă și telefon (Android/iOS).</li>
+      <li><strong>Este potrivită pentru copilul meu de 3 ani?</strong> Da, aplicația e gândită exact pentru 3–6 ani.</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Atelierul Digital | contact@atelieruldigital.ro<br/>
+    Politica de confidențialitate | Termeni și condiții
+  </footer>
+
+</body>
+</html>
