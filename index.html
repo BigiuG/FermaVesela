@@ -163,8 +163,24 @@
       <input type="text" name="name" placeholder="Nume complet" required />
       <input type="email" name="email" placeholder="Email" required />
       <input type="number" name="child_age" placeholder="Vârsta copilului" min="3" max="6" required />
+      <p id="error-message" style="color: red; display: none;">Vă rugăm să introduceți un email valid.</p>
       <button type="submit" class="btn">✅ Trimite</button>
     </form>
+
+    <script>
+      const form = document.getElementById('contactForm');
+      const emailInput = form.querySelector('input[name="email"]');
+      const errorMessage = document.getElementById('error-message');
+    
+      form.addEventListener('submit', function (event) {
+        if (!emailInput.validity.valid) {
+          event.preventDefault(); // Prevent form submission
+          errorMessage.style.display = 'block'; // Show error message
+        } else {
+          errorMessage.style.display = 'none'; // Hide error message
+        }
+      });
+    </script>
   </section>
 
   <section>
